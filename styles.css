@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #171418;
+    color: white;
+}
+
+.Header {
+    background-color: #a1242f;
+    color: #f1f1f1;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    .Navegación{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 1.5rem 0;
+
+        .AnclaLogo{
+            text-decoration: none;
+            color: #f1f1f1;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .ListaNav{
+            list-style: none;
+            display: flex;
+            align-items: center;
+
+            .ListaItem{
+                margin-right: 20px;
+
+                .LinkNav{
+                    color:#f1f1f1;
+                    text-decoration: none;
+                    font-weight: 700;
+                    font-size: 1.1rem;
+                    padding: 0.5rem 1rem;
+                    
+                    transition: transform 0.3s, box-shadow 0.3s;
+                    &:hover{
+                        transform: scale(0.9);
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                        border-radius: 5px;
+                    }
+                }
+
+                .LinkNav.IniciarSesión{
+                    background-color: black;
+                    color: white;
+                    border-radius: 5px;
+
+                    &:hover{
+                        background-color: #a1242f;
+                    }
+                }
+            }
+
+            
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .Header{
+        height: initial;
+        .Navegación{
+            flex-direction: column;
+            margin-left: 10px;
+            margin-right: 10px;
+            row-gap: 20px;
+
+            .AnclaLogo{
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
+
+            .ListaNav{
+                padding: initial;
+
+                .ListaItem{
+                    .LinkNav{
+                        font-weight: 300;
+                        margin-right: initial;
+                        font-size: 1rem;
+                        padding: 0.2rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.Main{
+    .SectionPrincipal{
+        color: #f1f1f1;
+        background:linear-gradient(to right top, #0000008a, #0000008a), url(Assets/Woman-watching-TV.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .TítuloPrincipal{
+            font-size: 3.8rem;
+            font-weight: 650;
+            margin-bottom: 1rem;
+        }
+        .SubtítuloPrincipal{
+            font-size: 2rem;
+            font-weight: 350;
+            margin-bottom: 1rem;
+        }
+
+        .BotónRegistro{
+            background-color: #a1242f;
+            color: #f1f1f1;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            
+            transition: transform 0.3s, box-shadow 0.3s;
+            &:hover{
+                transform: scale(0.9);
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+
+            }
+        }
+    }
+
+    .buscadorPrincipal{
+        background-color: #171418;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .tituloBuscador{
+            font-size: 2.5rem;
+            font-weight: 750;
+            margin-bottom: 1rem;
+        }
+
+        .buscadorpeliculas{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1rem;
+
+            .inputBuscador{
+                height: 50px;
+                width: 500px;
+                margin: 20px 10px;
+                padding: 0px 20px;
+                border-radius: 25px;
+                border: 2px solid #f1f1f1;
+                font-size: 1.2rem;
+                outline: none;
+
+            }
+
+            .botonBuscador{
+                background-color: #a1242f;
+                color: #f1f1f1;
+                display: inline-block;
+                height: 50px;
+                margin: 20px 10px;
+                padding: 0 20px;
+                border-radius: 25px;
+                font-size: 1.2rem;
+                font-weight: 600;
+                border: 2px solid #f1f1f1;
+                text-align: center;
+
+                transition: transform 0.3s, box-shadow 0.3s;
+
+                &:hover{ transform: scale(0.9);
+                    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+                }
+            }
+        }
+    }
+}
+
+
