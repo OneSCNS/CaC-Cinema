@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>CaC Cinema</title>
+    <link rel="icon" href="Assets/icono_proyecto.ico">
 </head>
 <body>
     <header class="Header">
@@ -37,5 +38,14 @@
         </section>
         
     </main>
+    <section id="tendencias" data-aos="fade-up" data-aos-offset="400" data-aos-delay="100" data-aos-duration="1000"
+        class="peliculasTendencia">
+        <h3 class="tituloSection">Las tendencias de hoy</h3>
+        <div class="peliculas"></div>
+        <button class="boton anterior">Anterior</button>
+        <button class="boton siguiente">Siguiente</button>
+    </section>
+    <hr>
+    <script src="api.js"></script>
 </body>
 </html>
